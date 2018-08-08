@@ -11,6 +11,10 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
     crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="yemek.css">
 </head>
 
@@ -18,13 +22,15 @@
   <div class="container">
     <div class="header-container">
       <div class="menu" style="float: left;">
-        <nav class="navbar navbar-light light-blue lighten-4">
-          <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1"
-            aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="dark-blue-text">
-              <i class="fa fa-bars fa-2x"></i>
-            </span>
-          </button>
+        <button type="button" class="btn" data-toggle="modal" data-target="#nhmodal">
+          <i class="fas fa-bars fa-2x"></i>
+        </button>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" id="nhmodal" aria-labelledby="myLargeModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content"></div>
+          </div>
+        </div>
       </div>
       <div class="logo">
         <a href="https://www.yemek.com">
@@ -55,23 +61,27 @@
       </div>
     </div>
     <div class="cover-photo">
-        <div class="top-text">
-            <img src="media/indir 2.png">
-            <p>Kapak Fotoğrafını Güncelle</p>
-          </div>
+      <div class="top-text">
+        <img src="media/indir 2.png">
+        <p>Kapak Fotoğrafını Güncelle</p>
+      </div>
       <div class="image">
         <img src="media/cover.png" alt="coverphoto">
       </div>
-      <div class="photo-text">  
+      <div class="photo-text">
         <p>busra_arsal</p>
-        <a href="#"><img src="media/indir.png"></a>
+        <a href="#">
+          <img src="media/indir.png">
+        </a>
       </div>
     </div>
     <div class="row profil">
       <div class="col-md-8 profil-text">
         <div class="text">
           <p>Ben de Yemek.com'un yazarlarından biri oldum.Masa çok geniş,sen de otursana!</p>
-          <a href="#"><img src="media/indir.png"></a>
+          <a href="#">
+            <img src="media/indir.png">
+          </a>
         </div>
       </div>
       <div class="col-md-4 profil-photo">

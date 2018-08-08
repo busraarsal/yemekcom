@@ -19,14 +19,27 @@ body {
     .container .header-container .menu {
       float: left; }
       .container .header-container .menu button {
-        border: 0; }
-        .container .header-container .menu button span i {
+        border: 0;
+        background-color: white; }
+        .container .header-container .menu button i {
           color: black; }
+      .container .header-container .menu .modal-dialog {
+        min-width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0; }
+        .container .header-container .menu .modal-dialog .modal-content {
+          height: auto;
+          min-height: 100%;
+          border-radius: 0;
+          background-color: #1f2f3a; }
     .container .header-container .logo {
       position: relative;
       float: left; }
       .container .header-container .logo img {
-        width: 155px; }
+        width: 155px;
+        margin-left: 20px;
+        margin-top: -5px; }
     .container .header-container .right-container {
       float: right;
       position: relative; }
